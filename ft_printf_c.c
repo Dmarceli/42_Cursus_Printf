@@ -3,11 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf_c.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dmarceli <dmarceli@student.42.fr>          +#+  +:+       +#+        */
+/*   By: danielsequeira <danielsequeira@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 19:34:19 by dmarceli          #+#    #+#             */
-/*   Updated: 2021/12/02 19:34:26 by dmarceli         ###   ########.fr       */
+/*   Updated: 2021/12/03 15:22:17 by danielseque      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+
+int ft_print_c(char c)
+{
+    write(1, c ,1);
+    return(1);
+}
