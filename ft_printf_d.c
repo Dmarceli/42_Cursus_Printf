@@ -32,10 +32,10 @@ int	ft_printf_d(int c)
     return(count);
 }
 
-// int main()
-// {
-//     int c = 2147483647;
-//     printf("%d\n" , ft_printf_d(c));
-//     ft_printf_d(c);
-//     return (0);
-// }
+int main()
+{
+    int c =-2147483648;
+    printf("%d\n" , ft_printf_d(c));
+    ft_printf_d(c);
+    return (0);
+}
