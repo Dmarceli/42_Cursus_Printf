@@ -6,43 +6,45 @@
 #    By: dmarceli <dmarceli@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/02 16:58:20 by dmarceli          #+#    #+#              #
-#    Updated: 2021/12/02 19:38:17 by dmarceli         ###   ########.fr        #
+#    Updated: 2021/12/06 16:36:08 by dmarceli         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
+CC 				= gcc
+CFLAGS	= -Wall -Wextra -Werror
+LIB1	= ar -rcs
+LIB2	= ranlib
+RM				= /bin/rm -f
 
-NAME = libftprintf.a
+NAME	= libftprintf.a
 
-CC = gcc 
+INCLUDE = .
+SRCS	= ft_printf_c.c ft_printf_d.c \
+			ft_printf_i.c ft_printf_p.c \
+			ft_printf_s.c ft_printf_u.c \
+			ft_printf_xg.c  ft_printf_xp.c \
+			ft_printf.c ft_printf_distributor.c \
+			ft_strchr.c ft_strlen.c
 
-CFLAGS = -Wall -Wextra -Werror
+OBJS	= $(SRCS:.c=.o)
 
-SRCS = $(wildcard *.c)
+all: 		$(NAME) clean
 
-OBJS  = $(SRCS.c=.o)
+$(NAME): 	$(OBJS) $(INCLUDE)
+					$(LIB1) $(NAME) $(OBJS)
+					$(LIB2) $(NAME)
 
-LIBFT = libft
+bonus:		$(NAME) clean
 
-HEADER = ft_printf.h -L ./libft -lft
-
-.o.c
-	@$(CC) $(CFLAGS) $(HEADER) -I $< -c $@
-
-all : $(NAME)
-
-$(NAME) $(OBJS)
-	@make -C $(LIBFT)
-	@cp libft/libft.a ./$(NAME)
-	@ar rc $(NAME) $(OBJS)
-	@ranlib $(NAME)
+.c.o:
+					$(CC) $(CFLAGS) -I$(INCLUDE) -c $< -o $(<:.c=.o)
 clean:
-	@rm -f $(OBJS)
-	@make clean -C $(LIBFT)
+					$(RM) $(OBJS)
+fclean: 	clean
+					$(RM) $(NAME)
 
-fclean: clean 
-	@rm -f $(NAME)
-	@make fclean -C $(LIBFT) 
+re: 				fclean all
 
-re : fclean all
+rebonus:	fclean bonus
 
-.PHONY: all clean fclean re
+.PHONY:		all clean fclean re bonus rebonus

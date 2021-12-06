@@ -16,12 +16,12 @@ int	ft_printf_d(int c)
 		count += ft_putchar('2');
 		c = 147483648;
 	}
-    if (c < 0)
+    else if (c < 0)
 	{
 		c = c * -1;
 		count += ft_putchar('-');
 	}
-	if (c >= 10)
+	else if (c >= 10)
 	{
 		count += ft_printf_d(c / 10);
 		count += ft_printf_d(c % 10);

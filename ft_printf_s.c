@@ -6,7 +6,7 @@
 /*   By: dmarceli <dmarceli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 19:10:21 by dmarceli          #+#    #+#             */
-/*   Updated: 2021/12/02 19:34:02 by dmarceli         ###   ########.fr       */
+/*   Updated: 2021/12/06 15:44:14 by dmarceli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ int	ft_printf_s(char *str)
 	int	i;
 	int	count;
 
+	count = 0;
 	i = 0;
 	if (!str)
 		count += write (1, "(null)", 6);
