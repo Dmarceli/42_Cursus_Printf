@@ -6,7 +6,7 @@
 /*   By: dmarceli <dmarceli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/20 11:06:44 by dmarceli          #+#    #+#             */
-/*   Updated: 2021/12/06 16:25:50 by dmarceli         ###   ########.fr       */
+/*   Updated: 2021/12/08 14:40:51 by dmarceli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,18 +23,3 @@ unsigned int	ft_strlen(char const *str)
 	}
 	return (i);
 }
-
-// int	main(void)
-// {
-// 	char s[] = "	1234567890";
-// 	printf("%d\n", ft _strlen(s));
-// 	return ();
-// }
-// %
-
-// 	int main(void)
-// {
-// 	char s[] = "1234567890";
-// 	printf("%d\n", ft_ strlen(s));
-// 	return (0);
-// }%

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: danielsequeira <danielsequeira@student.    +#+  +:+       +#+        */
+/*   By: dmarceli <dmarceli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 17:55:37 by dmarceli          #+#    #+#             */
-/*   Updated: 2021/12/07 16:07:57 by danielseque      ###   ########.fr       */
+/*   Updated: 2021/12/08 16:02:21 by dmarceli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ int	ft_printf(const char *str, ...)
 				break ;
 		}
 		else
-			write (1, &str[i++], 1);
+			counter += write (1, &str[i++], 1);
 	}
 	va_end(args);
 	return (counter);
@@ -43,10 +43,11 @@ int	ft_printf(const char *str, ...)
 
 // int main()
 // {
-// 	char x = '0';
-// 	printf("$%d$\n", printf("%c", x));
-// 	printf("$%d$\n", ft_printf("%c", x));
-// 	printf("#%c#\n", x);
-// 	ft_printf("#%c#\n", x);
+// 	long int x = 2147483647;
+// 	long int y = -2147483648;
+// 	// printf("$%d$\n", printf("cd%s", x));
+// 	// printf("$%d$\n", ft_printf("cd%s", x));
+// 	printf("#%p %p#\n", x , y);
+// 	ft_printf("#%p %p#\n", x , y);
 // 	return (0);
 // }

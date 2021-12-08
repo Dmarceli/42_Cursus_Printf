@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf_p.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: danielsequeira <danielsequeira@student.    +#+  +:+       +#+        */
+/*   By: dmarceli <dmarceli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/06 14:18:56 by dmarceli          #+#    #+#             */
-/*   Updated: 2021/12/06 19:33:39 by danielseque      ###   ########.fr       */
+/*   Updated: 2021/12/08 16:20:41 by dmarceli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,12 +44,12 @@ int	ft_printf_p(unsigned long int c)
 	counter += ft_putnbr_counter(c ,"0123456789abcedf");
 	return (counter);
 }
-// int main()
-// {
-// 	unsigned long int c = 12781632;
-// 	char *oi = "ola";
-// 	printf("%p\n" , oi);
-// 	printf("%d\n" , ft_printf_p(oi));
-// 	ft_printf_p(oi);
-// 	return (0);
-// }
+int main()
+{
+	unsigned long int c = -2147483648;
+	//char *oi = "ola";
+	printf("%p\n" , c);
+	printf("%d\n" , ft_printf_p(c));
+	ft_printf_p(c);
+	return (0);
+}

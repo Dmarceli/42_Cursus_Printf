@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf_distributor.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: danielsequeira <danielsequeira@student.    +#+  +:+       +#+        */
+/*   By: dmarceli <dmarceli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 18:30:33 by dmarceli          #+#    #+#             */
-/*   Updated: 2021/12/06 19:16:37 by danielseque      ###   ########.fr       */
+/*   Updated: 2021/12/08 14:43:45 by dmarceli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

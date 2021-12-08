@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: danielsequeira <danielsequeira@student.    +#+  +:+       +#+         #
+#    By: dmarceli <dmarceli@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/02 16:58:20 by dmarceli          #+#    #+#              #
-#    Updated: 2021/12/06 19:19:58 by danielseque      ###   ########.fr        #
+#    Updated: 2021/12/08 14:44:23 by dmarceli         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
