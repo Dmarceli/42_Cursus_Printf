@@ -1,11 +1,6 @@
 #include "ft_printf.h"
 
-int	ft_putchar(char c)
-{
-    write (1, &c, 1);
-    return(1);
-}
-int	ft_printf_d(int c)
+int	ft_printf_i(int c)
 {
 	int count;
 
@@ -23,8 +18,8 @@ int	ft_printf_d(int c)
 	}
 	else if (c >= 10)
 	{
-		count += ft_printf_d(c / 10);
-		count += ft_printf_d(c % 10);
+		count += ft_printf_i(c / 10);
+		count += ft_printf_i(c % 10);
         return(count);
 	}
 	else

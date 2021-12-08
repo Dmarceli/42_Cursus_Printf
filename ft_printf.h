@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dmarceli <dmarceli@student.42.fr>          +#+  +:+       +#+        */
+/*   By: danielsequeira <danielsequeira@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 17:12:50 by dmarceli          #+#    #+#             */
-/*   Updated: 2021/12/06 16:24:02 by dmarceli         ###   ########.fr       */
+/*   Updated: 2021/12/06 19:40:04 by danielseque      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,6 @@ int		ft_printf_i(int c);
 int		ft_printf_u(unsigned int c);
 int		ft_printf_p(unsigned long int c);
 int		ft_printf_d(int c);
+int	    ft_putchar(char c);
 
 #endif

@@ -3,20 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf_d.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dmarceli <dmarceli@student.42.fr>          +#+  +:+       +#+        */
+/*   By: danielsequeira <danielsequeira@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/06 14:17:34 by dmarceli          #+#    #+#             */
-/*   Updated: 2021/12/06 14:18:44 by dmarceli         ###   ########.fr       */
+/*   Updated: 2021/12/06 19:35:56 by danielseque      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-
-int	ft_putchar(char c)
-{
-	write(1, &c, 1);
-	return (1);
-}
 
 int	ft_printf_d(int c)
 {

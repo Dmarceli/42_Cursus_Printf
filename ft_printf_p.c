@@ -3,26 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf_p.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dmarceli <dmarceli@student.42.fr>          +#+  +:+       +#+        */
+/*   By: danielsequeira <danielsequeira@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/06 14:18:56 by dmarceli          #+#    #+#             */
-/*   Updated: 2021/12/06 15:17:55 by dmarceli         ###   ########.fr       */
+/*   Updated: 2021/12/06 19:33:39 by danielseque      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-unsigned int	ft_strlen(char const *str)
-{
-	int	i;
+// unsigned int	ft_strlen(char const *str)
+// {
+// 	int	i;
 
-	i = 0;
-	while (str[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
-}
+// 	i = 0;
+// 	while (str[i] != '\0')
+// 	{
+// 		i++;
+// 	}
+// 	return (i);
+// }
 
 int	ft_putnbr_counter(long long int nbr, const char *base)
 {
