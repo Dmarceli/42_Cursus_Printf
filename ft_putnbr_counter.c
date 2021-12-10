@@ -1,30 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf_xp.c                                     :+:      :+:    :+:   */
+/*   ft_putnbr_counter.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dmarceli <dmarceli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/06 15:08:30 by dmarceli          #+#    #+#             */
-/*   Updated: 2021/12/10 17:24:07 by dmarceli         ###   ########.fr       */
+/*   Created: 2021/12/10 15:42:55 by dmarceli          #+#    #+#             */
+/*   Updated: 2021/12/10 17:24:15 by dmarceli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_printf_xp(unsigned int c)
+int	ft_putnbr_counter(long long int nbr, const char *base)
 {
 	int	counter;
 
 	counter = 0;
-	counter += ft_putnbr_counter(c, "0123456789abcdef");
+	if (nbr >= ft_strlen(base))
+		counter = counter + ft_putnbr_counter (nbr / ft_strlen(base), base);
+	counter = counter + write(1, &base[nbr % ft_strlen(base)], 1);
 	return (counter);
 }
-// int main()
-// {
-// 	unsigned int c = 12781632;
-// 	printf("%x\n" , c);
-// 	printf("%d\n" , ft_printf_xp(c));
-// 	ft_printf_xp(c);
-// 	return (0);
-// }

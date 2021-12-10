@@ -6,7 +6,7 @@
 /*   By: dmarceli <dmarceli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/06 14:18:56 by dmarceli          #+#    #+#             */
-/*   Updated: 2021/12/08 16:20:41 by dmarceli         ###   ########.fr       */
+/*   Updated: 2021/12/10 15:42:09 by dmarceli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@
 // 	return (i);
 // }
 
-int	ft_putnbr_counter(long long int nbr, const char *base)
+int	ft_putnbr_counter_u(unsigned long int nbr, const char *base)
 {
 	int	counter;
 
@@ -41,15 +41,15 @@ int	ft_printf_p(unsigned long int c)
 
 	counter = 0;
 	counter += write(1, "0x", 2);
-	counter += ft_putnbr_counter(c ,"0123456789abcedf");
+	counter += ft_putnbr_counter_u(c, "0123456789abcedf");
 	return (counter);
 }
-int main()
-{
-	unsigned long int c = -2147483648;
-	//char *oi = "ola";
-	printf("%p\n" , c);
-	printf("%d\n" , ft_printf_p(c));
-	ft_printf_p(c);
-	return (0);
-}
+// int main()
+// {
+// 	unsigned long int c = -2147483648;
+// 	//char *oi = "ola";
+// 	printf("%p\n" , c);
+// 	printf("%d\n" , ft_printf_p(c));
+// 	ft_printf_p(c);
+// 	return (0);
+// }

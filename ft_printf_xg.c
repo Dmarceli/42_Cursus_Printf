@@ -6,7 +6,7 @@
 /*   By: dmarceli <dmarceli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/06 15:08:30 by dmarceli          #+#    #+#             */
-/*   Updated: 2021/12/08 14:41:43 by dmarceli         ###   ########.fr       */
+/*   Updated: 2021/12/10 17:23:57 by dmarceli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_printf_xg(unsigned int c)
 	int	counter;
 
 	counter = 0;
-	counter += ft_putnbr_counter(c ,"0123456789ABCDEF");
+	counter += ft_putnbr_counter(c, "0123456789ABCDEF");
 	return (counter);
 }
 // int main()

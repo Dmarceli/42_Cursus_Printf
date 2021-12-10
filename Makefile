@@ -6,7 +6,7 @@
 #    By: dmarceli <dmarceli@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/02 16:58:20 by dmarceli          #+#    #+#              #
-#    Updated: 2021/12/08 14:44:23 by dmarceli         ###   ########.fr        #
+#    Updated: 2021/12/10 17:18:17 by dmarceli         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,8 +18,12 @@ RM				= /bin/rm -f
 
 NAME	= libftprintf.a
 
-INCLUDE = .
-SRCS	= ${wildcard *.c}
+INCLUDE = ft_printf.h
+SRCS	= ft_printf_c.c ft_printf_d.c ft_printf_distributor.c\
+			ft_printf_i.c ft_printf_p.c ft_printf_s.c\
+			ft_printf_u.c ft_printf_xg.c ft_printf_xp.c\
+			ft_printf.c ft_putchar.c ft_putnbr_counter.c\
+			ft_strchr.c ft_strlen.c
 
 OBJS	= $(SRCS:.c=.o)
 
@@ -40,6 +44,4 @@ fclean: 	clean
 
 re: 				fclean all
 
-rebonus:	fclean bonus
-
-.PHONY:		all clean fclean re bonus rebonus
+.PHONY:		all clean fclean re
