@@ -6,7 +6,7 @@
 /*   By: dmarceli <dmarceli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/06 14:18:56 by dmarceli          #+#    #+#             */
-/*   Updated: 2021/12/10 15:42:09 by dmarceli         ###   ########.fr       */
+/*   Updated: 2021/12/10 19:01:25 by dmarceli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int	ft_printf_p(unsigned long int c)
 
 	counter = 0;
 	counter += write(1, "0x", 2);
-	counter += ft_putnbr_counter_u(c, "0123456789abcedf");
+	counter += ft_putnbr_counter_u(c, "0123456789abcdef");
 	return (counter);
 }
 // int main()
