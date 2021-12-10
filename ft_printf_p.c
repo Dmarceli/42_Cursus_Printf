@@ -6,23 +6,11 @@
 /*   By: dmarceli <dmarceli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/06 14:18:56 by dmarceli          #+#    #+#             */
-/*   Updated: 2021/12/10 19:01:25 by dmarceli         ###   ########.fr       */
+/*   Updated: 2021/12/10 19:08:55 by dmarceli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-
-// unsigned int	ft_strlen(char const *str)
-// {
-// 	int	i;
-
-// 	i = 0;
-// 	while (str[i] != '\0')
-// 	{
-// 		i++;
-// 	}
-// 	return (i);
-// }
 
 int	ft_putnbr_counter_u(unsigned long int nbr, const char *base)
 {

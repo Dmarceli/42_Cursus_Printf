@@ -6,7 +6,7 @@
 /*   By: dmarceli <dmarceli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 18:30:33 by dmarceli          #+#    #+#             */
-/*   Updated: 2021/12/10 16:41:43 by dmarceli         ###   ########.fr       */
+/*   Updated: 2021/12/10 19:09:14 by dmarceli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,6 @@ void	(*ft_printf_distributor(char c))
 		return (&ft_printf_p);
 	if (c == 'd')
 		return (&ft_printf_d);
-	if (c == '%')
-		return (&ft_printf_c);
 	else
 		return (0);
 }
